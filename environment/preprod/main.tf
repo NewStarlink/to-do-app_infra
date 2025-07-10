@@ -12,6 +12,13 @@ module "resource_group" {
   resource_group_name     = var.resource_group_name2
   resource_group_location = var.resource_group_location2
 }
+
+module "resource_group97" {
+  source = "../../modules/azurerm_resource_group"
+
+  resource_group_name     = var.resource_group_name97
+  resource_group_location = var.resource_group_location97
+
 module "resource_group99" {
   source = "../../modules/azurerm_resource_group"
 
