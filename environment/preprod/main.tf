@@ -6,32 +6,6 @@ module "resource_group" {
 
 }
 
-module "resource_group" {
-  source = "../../modules/azurerm_resource_group"
-
-  resource_group_name     = var.resource_group_name2
-  resource_group_location = var.resource_group_location2
-}
-
-module "resource_group97" {
-  source = "../../modules/azurerm_resource_group"
-
-  resource_group_name     = var.resource_group_name97
-  resource_group_location = var.resource_group_location97
-
-module "resource_group99" {
-  source = "../../modules/azurerm_resource_group"
-
-  resource_group_name     = var.resource_group_name99
-  resource_group_location = var.resource_group_location99
-}
-module "resource_group87" {
-  source = "../../modules/azurerm_resource_group"
-
-  resource_group_name     = var.resource_group_name87
-  resource_group_location = var.resource_group_location87
-}
-
 module "key_vault" {
   source                  = "../../modules/azurerm_key_vault"
   depends_on              = [module.resource_group]
